@@ -41,11 +41,11 @@ the streamlit ui consists of the following components
 ## Test Results and comparison
 ### Test 1
 these are the results of yolov8 model on the first image that consists of humans and alot of object around them
-![Test 1 Image](https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/test_1_v3.jpg | width=80%)
+![Test 1 Image](https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/test_1_v3.jpg | width=80)
 these are the confidence levels
 person: 0.90 person: 0.89 chair: 0.84 person: 0.79 chair: 0.78 person: 0.76 chair: 0.71 chair: 0.67 chair: 0.67 person: 0.55 person: 0.52 person: 0.51 <br/>
 these are the results of yolov3 model on the first image
-![Test 33 Image](https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/test_1_v3.jpg | width=80%)
+![Test 33 Image](https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/test_1_v3.jpg | width=80)
 these are the confidence levels
 person: 0.99 person: 0.99 chair: 0.95 person: 0.98 backpack: 0.68 person: 0.93 person: 0.63 person: 0.70 person: 0.93 person: 0.77 person: 0.60 diningtable: 0.54 chair: 0.83 chair: 0.98 chair: 0.80 chair: 0.78 cup: 0.82 <br/>
 Yolov3 got a better prediction and more objects are been detected as the confidence level is bigger than 0.5
