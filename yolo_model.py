@@ -1,7 +1,4 @@
-import torch
 import cv2
-import numpy as np
-import sys
 from ultralytics import YOLO
 
 # Load YOLOv8 model
