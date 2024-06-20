@@ -41,28 +41,28 @@ the streamlit ui consists of the following components
 ## Test Results and comparison
 ### Test 1
 these are the results of yolov8 model on the first image that consists of humans and alot of object around them
-![Test 1 Image](https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/results/test_1_v8.jpg)
+![Test 1 Image](https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/test_1_v3.jpg)
 these are the confidence levels
-![Test 2 Image](https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/results/test_1_v8_photo2.jpg)
+![Test 2 Image](https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/test_1_v8_photo2.jpg)
 these are the results of yolov3 model on the first image
-![Test 33 Image](https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/results/test_1_v3.jpg)
+![Test 33 Image](https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/test_1_v3.jpg)
 these are the confidence levels
-![Test 333 Image](https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/results/test_1_v3_photo2.jpg)
+![Test 333 Image](https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/test_1_v3_photo2.jpg)
 Yolov3 got a better prediction and more objects are been detected
 ### Test 2
 Yolov8 model on the second image that consists of three sheep
-![Test 3333 Image](https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/results/test_2_v8.jpg)
+![Test 3333 Image](https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/test_2_v8.jpg)
 Yolov3 model on the second image that consists of three sheep
-![Test 44444 Image](https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/results/test_2_v3.jpg)
+![Test 44444 Image](https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/test_2_v3.jpg)
 Yolov3 got a better prediction and the three sheep are detected
 ### Test 4
 #### comparison between yoloV3, yoloV8 and CNN
 YoloV8 failed in classifying 4 dogs and missed 1 dog on the right
-![Test 444 Image](https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/results/test_4_v8.jpg)
+![Test 444 Image](https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/test_4_v8.jpg)
 YoloV3 succeeded in classifying the 4 dogs and missed 1 dog on the left
-![Test 4444 Image](https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/results/test_4_v3.jpg)
+![Test 4444 Image](https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/test_4_v3.jpg)
 CNN failed
-![Test 4444 Image](https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/results/test_4_CNN.jpg)
+![Test 4444 Image](https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/test_4_CNN.jpg)
 ### Result
 the yolov3 has a better predictions and high accuracy but very large size
 the yolov8 got a good predicions and accuracy also has a very small size and very fast
