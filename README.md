@@ -76,7 +76,7 @@ The yolov8 got good predictions and accuracy, also has a very small size and is 
 The Pretrained CNN terribly failed as the images objects have a lot of different views and high context.
 
 # Video
-[![explaination video] (https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/videopreview.jpg)](https://www.youtube.com/watch?v=wAhiC-ZT_II&ab_channel=HIMA)
+[<img src="https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/videopreview.jpg"](https://www.youtube.com/watch?v=wAhiC-ZT_II&ab_channel=HIMA)
 # Models links 
 YoloV3
 (https://github.com/AlexeyAB/darknet/tree/master)
