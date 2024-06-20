@@ -41,12 +41,12 @@ the streamlit ui consists of the following components
 ## Test Results and comparison
 ### Test 1
 These are the results of yolov8 model on the first image that consists of humans and a lot of objects around them
-<img src="https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/test_1_v3.jpg" alt="Test 1 Image" width="80%"/>
+<img src="https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/test_1_v3.jpg" alt="Test 1 Image" width="60%"/>
 
 These are the confidence levels:
 person: 0.90 person: 0.89 chair: 0.84 person: 0.79 chair: 0.78 person: 0.76 chair: 0.71 chair: 0.67 chair: 0.67 person: 0.55 person: 0.52 person: 0.51 <br/>
 These are the results of yolov3 model on the first image
-<img src="https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/test_1_v3.jpg" alt="Test 33 Image" width="80%"/>
+<img src="https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/test_1_v3.jpg" alt="Test 33 Image" width="60%"/>
 
 These are the confidence levels:
 person: 0.99 person: 0.99 chair: 0.95 person: 0.98 backpack: 0.68 person: 0.93 person: 0.63 person: 0.70 person: 0.93 person: 0.77 person: 0.60 diningtable: 0.54 chair: 0.83 chair: 0.98 chair: 0.80 chair: 0.78 cup: 0.82 <br/>
@@ -54,21 +54,21 @@ Yolov3 got a better prediction and more objects are been detected as the confide
 
 ### Test 2
 Yolov8 model on the second image that consists of three sheep<br/>
-<img src="https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/test_2_v8.jpg" alt="Test 3333 Image" width="80%"/>
+<img src="https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/test_2_v8.jpg" alt="Test 3333 Image" width="60%"/>
 
 Yolov3 model on the second image that consists of three sheep<br/>
-<img src="https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/test_2_v3.jpg" alt="Test 44444 Image" width="80%"/><br/>
+<img src="https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/test_2_v3.jpg" alt="Test 44444 Image" width="60%"/><br/>
 
 Yolov3 failed in detecting one sheep.
 
 ### Test 4
 #### Comparison between yoloV3, yoloV8 and CNN
 YoloV8 failed in classifying 4 dogs and missed 1 dog on the right: dog: 0.93 dog: 0.80 sheep: 0.77 sheep: 0.70 sheep: 0.67 sheep: 0.57 <br/>
-<img src="https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/test_4_v8.jpg" alt="Test 444 Image" width="80%"/><br/>
+<img src="https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/test_4_v8.jpg" alt="Test 444 Image" width="60%"/><br/>
 YoloV3 succeeded in classifying the 4 dogs and missed 1 dog on the left<br/>
-<img src="https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/test_4_v3.jpg" alt="Test 4444 Image" width="80%"/><br/>
+<img src="https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/test_4_v3.jpg" alt="Test 4444 Image" width="60%"/><br/>
 CNN failed<br/>
-<img src="https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/test_4_CNN.jpg" alt="Test 4444 Image" width="80%"/>
+<img src="https://github.com/IbraheimTarek/Yolov8-for-image-detection/blob/main/test_results/test_4_CNN.jpg" alt="Test 4444 Image" width="60%"/>
 
 ### Result
 The yolov3 has better predictions and higher accuracy but a very large size.
@@ -77,5 +77,11 @@ The Pretrained CNN terribly failed as the images objects have a lot of different
 
 # Video
 
+# Models links 
+YoloV3
+(https://github.com/AlexeyAB/darknet/tree/master)
+(https://www.kaggle.com/datasets/shivam316/yolov3-weights)<br/>
+YoloV8
+(https://github.com/ultralytics/ultralytics)
 ## Contributors
 - [Ibraheim Tarek](https://github.com/IbraheimTarek)
