@@ -2,7 +2,12 @@
 
 ## Overview
 a Stream-lit application that uses Yolov8 pretrained model to perform object detection on an input image, filters the detections by confidence, draws bounding boxes and labels on the image, and returns the detection results along with the annotated image.
-
+## To run the application
+```
+pip install -r requirements.txt
+python app.py
+streamlit run streamlit_app.py
+```
 ## YOLOv8 Model additions
 ### 1-Loading the YOLOv8 Model:
 ### 2-Processing the Detection Results:
