@@ -10,19 +10,10 @@ def load_coco_names(file_path):
         classes = [line.strip() for line in f.readlines()]
     return classes
 
-# Read the Google Analytics HTML file
+# Include Google Analytics tracking code
 with open("google_analytics.html", "r") as f:
     html_code = f.read()
-
-# Apply Streamlit theme background color
-st.markdown(f"""
-<style>
-.google-analytics {{
-    background-color: var(--background-color);
-}}
-</style>
-<div class="google-analytics">{html_code}</div>
-""", unsafe_allow_html=True)
+    components.html(html_code, height=0)
 
 # Streamlit application
 st.title("Image Component Recognition with Bounding Boxes")
@@ -52,19 +43,7 @@ if uploaded_file is not None:
         response = requests.post("https://ibraheimtarek.pythonanywhere.com/predict", files=files)
 
         if response.status_code == 200:
-            response_data = response.json()
-            components_list = response_data.get("components", [])
-            image_path = response_data.get("image_path", None)
-
-            if image_path:
-                processed_image = Image.open(image_path)
-                st.image(processed_image, caption='Processed Image', use_column_width=True)
-
-            if components_list:
-                st.success("Components recognized:")
-                for component in components_list:
-                    st.write(f"{component['label']}: {component['confidence']:.2f}")
-            else:
-                st.error("No components recognized.")
+            processed_image = Image.open(io.BytesIO(response.content))
+            st.image(processed_image, caption='Processed Image', use_column_width=True)
         else:
-            st.error(f"Failed to process the image. Error: {response.text}")
+            st.error(f"Failed to process the image. Error: {response.json()['error']}")
