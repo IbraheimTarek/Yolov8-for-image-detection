@@ -49,7 +49,7 @@ if uploaded_file is not None:
     if st.button("Recognize Components"):
         st.write("Analyzing the image...")
         files = {'file': ('image.png', img_bytes, 'image/png')}
-        response = requests.post("http://127.0.0.1:5000/predict", files=files)
+        response = requests.post("https://ibraheimtarek.pythonanywhere.com/predict", files=files)
 
         if response.status_code == 200:
             response_data = response.json()
