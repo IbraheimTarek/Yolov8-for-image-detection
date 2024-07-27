@@ -88,5 +88,7 @@ YoloV3
 (https://www.kaggle.com/datasets/shivam316/yolov3-weights)<br/>
 YoloV8
 (https://github.com/ultralytics/ultralytics)
+# Application link
+(https://yolov8objectdetection.streamlit.app/)
 ## Contributors
 - [Ibraheim Tarek](https://github.com/IbraheimTarek)
