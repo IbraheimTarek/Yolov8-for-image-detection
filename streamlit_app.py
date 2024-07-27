@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 from PIL import Image
 import io
 import requests
@@ -8,6 +9,20 @@ def load_coco_names(file_path):
     with open(file_path, "r") as f:
         classes = [line.strip() for line in f.readlines()]
     return classes
+
+# Read the Google Analytics HTML file
+with open("google_analytics.html", "r") as f:
+    html_code = f.read()
+
+# Apply Streamlit theme background color
+st.markdown(f"""
+<style>
+.google-analytics {{
+    background-color: var(--background-color);
+}}
+</style>
+<div class="google-analytics">{html_code}</div>
+""", unsafe_allow_html=True)
 
 # Streamlit application
 st.title("Image Component Recognition with Bounding Boxes")
@@ -38,16 +53,16 @@ if uploaded_file is not None:
 
         if response.status_code == 200:
             response_data = response.json()
-            components = response_data.get("components", [])
+            components_list = response_data.get("components", [])
             image_path = response_data.get("image_path", None)
 
             if image_path:
                 processed_image = Image.open(image_path)
                 st.image(processed_image, caption='Processed Image', use_column_width=True)
 
-            if components:
+            if components_list:
                 st.success("Components recognized:")
-                for component in components:
+                for component in components_list:
                     st.write(f"{component['label']}: {component['confidence']:.2f}")
             else:
                 st.error("No components recognized.")
